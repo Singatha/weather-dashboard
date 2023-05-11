@@ -1,0 +1,13 @@
+.header-block__text {
+    text-align: center;
+}
+
+.nav-block {
+    &__input {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
