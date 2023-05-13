@@ -1,11 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
-import { weatherApi } from './services/weather'
-import weatherReducer from '../features/weather/weatherSlice'
+import { weatherApi } from '../services/weather'
+// import weatherReducer from '../features/weather/weatherSlice'
 
 export const store = configureStore({
   reducer: {
-    weatherReducer,
     [weatherApi.reducerPath]: weatherApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

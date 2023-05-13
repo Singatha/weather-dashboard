@@ -1,0 +1,150 @@
+@import 'base';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-block {
+    background-color: darkcyan;
+
+    &__text {
+        font-family: $font-family;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.nav-block {
+    margin: 30px 0 0 0;
+
+    &__input {
+        border: 1px solid black;
+        display: block;
+        font-family: $font-family;
+        font-size: 20px;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.main-block {
+    margin: 30px 0 50px 0;
+
+    &__text {
+        font-family: $font-family;
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    &__text-icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.main-block-weather {
+    background-color: #FBFCFC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto 20px;
+    max-width: 600px;
+    width: 100%;
+
+    &__temperature-row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    &__sun-setting-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__img {
+        max-width: 175px;
+        height: auto;
+        width: 100%;
+    }
+
+    &__temp-block {
+        display: flex;
+    }
+
+    &__temp-max {
+        align-self: end;
+        font-family: $font-family;
+        font-size: 50px;
+    }
+
+    &__temp-min {
+        align-self: end;
+        font-family: $font-family;
+        font-size: 25px;
+    }
+
+    &__sunrise {
+        font-family: $font-family;
+    }
+
+    &__sunset {
+        font-family: $font-family;
+    }
+
+    &__time {
+        font-family: $font-family;
+    }
+
+    &__description {
+        font-family: $font-family;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.conditions-block {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.weather-condition-block {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 180px;
+    width: 100%;
+    
+    &__name {
+        font-family: $font-family;
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-family;
+        text-align: center;
+        
+        &--unit {
+            color: grey;
+        }
+    }
+
+    &__icon-celsius {
+        display: inline;
+    }
+
+    // &__icon {
+    //     display: block;
+    //     height: 20px;
+    //     width: 20px;
+    // }   
+}
